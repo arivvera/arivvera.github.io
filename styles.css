@@ -16,7 +16,7 @@ h1 {
   font-size: 48px;
   font-family: 'Space Mono', 'Courier New', Courier, monospace;
   position: relative;
-  color: rgba(0, 0, 0, 0.5);
+  color: black;
   text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
   display: inline-block;
   margin-bottom: 50px;
