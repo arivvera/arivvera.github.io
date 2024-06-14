@@ -19,7 +19,7 @@ h1 {
   color: black;
   text-shadow: 1px 1px 0 #ff00ff, -1px -1px 0 #00ffff;
   line-height: 100px;
-  margin-block-end: 0;
+  margin-block-end: .4em;
 }
 
 h2 {
@@ -27,7 +27,6 @@ h2 {
   font-family: 'Space Mono', 'Courier New', Courier, monospace;
   color: black;
   margin-bottom: 190px;
-  margin-top: 0;
 }
 
 h1::before,
@@ -46,21 +45,22 @@ h1::after {
 
 .links {
   display: flex;
-  gap: 215px;
+  gap: 250px;
   margin-bottom: 290px;
   font-size: 19px;
-  font-family: 'Clear Sans', 'Courier New', Courier, monospace;
 }
 
 .link-item {
   text-align: left;
 }
 
-.link-item a, .link-item strong {
+.link-item a, 
+.link-item strong {
   color: black;
   display: block;
   max-width: 255px;
   text-decoration: underline;
+  font-family: 'Clear Sans', 'Courier New', Courier, monospace;
 }
 
 .construction {
