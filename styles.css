@@ -3,60 +3,69 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
   background-color: #ffffff;
 }
 
 .container {
   text-align: center;
+  margin-bottom: 150px;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 80px;
   font-family: 'Space Mono', 'Courier New', Courier, monospace;
   position: relative;
   color: black;
-  text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+  text-shadow: 1px 1px 0 #ff00ff, -1px -1px 0 #00ffff;
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 190px;
+  line-height: 100px
 }
 
 h1::before,
 h1::after {
+  color: black;
+  text-shadow: 1px 1px 0 #ff00ff, -1px -1px 0 #00ffff;
+}
+
+h1::before {
   content: '<';
-  position: absolute;
-  top: 0;
-  color: rgba(0, 0, 0, 0.5);
-  text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
 }
 
 h1::after {
   content: '>';
-  right: -30px;
-  left: auto;
 }
 
 .links {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 50px;
+  gap: 215px;
+  margin-bottom: 290px;
+  font-size: 19px;
+  font-family: 'Clear Sans', 'Courier New', Courier, monospace;
 }
 
 .link-item {
   text-align: left;
 }
 
-.link-item a {
+.link-item a, .link-item strong {
   color: black;
-  text-decoration: none;
-}
-
-.link-item a:hover {
+  display: block;
+  max-width: 255px;
   text-decoration: underline;
 }
 
 .construction {
-  font-size: 20px;
+  font-size: 30px;
+  font-family: 'Space Mono', 'Courier New', Courier, monospace;
   color: black;
+  text-shadow: 1px 1px 0 #ffa8ff, -1px -1px 0 #acffff;
+  text-align: center;
+}
+
+.construction strong {
+  display: block;
+  max-width: 600px;
+  margin: auto;
 }
