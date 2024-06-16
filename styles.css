@@ -15,24 +15,8 @@ body {
 h1 {
   font-size: 80px;
   font-family: 'Space Mono', 'Courier New', Courier, monospace;
-  position: relative;
-  color: black;
-  text-shadow: 1px 1px 0 #ff00ff, -1px -1px 0 #00ffff;
   line-height: 100px;
   margin-block-end: .4em;
-}
-
-h2 {
-  font-size: 35px;
-  font-family: 'Space Mono', 'Courier New', Courier, monospace;
-  color: black;
-  margin-bottom: 190px;
-}
-
-h1::before,
-h1::after {
-  color: black;
-  text-shadow: 1px 1px 0 #ff00ff, -1px -1px 0 #00ffff;
 }
 
 h1::before {
@@ -43,36 +27,53 @@ h1::after {
   content: '>';
 }
 
-.links {
+h2 {
+  font-size: 35px;
+  font-family: 'Space Mono', 'Courier New', Courier, monospace;
+  color: black;
+  margin-bottom: 190px;
+}
+
+h2::before {
+  content: "_";
+  font-weight: bolder;
+}
+
+h1, h2::before {
+  color: black;
+  text-shadow: 1px 1px 0 #ff00ff, -1px -1px 0 #00ffff;
+}
+
+.contact {
   display: flex;
   gap: 250px;
   margin-bottom: 290px;
   font-size: 19px;
 }
 
-.link-item {
+.contact-item {
   text-align: left;
 }
 
-.link-item a, 
-.link-item strong {
+.contact-item a, 
+.contact-item strong {
   color: black;
+  font-family: 'Clear Sans', 'Courier New', Courier, monospace;
   display: block;
   max-width: 255px;
   text-decoration: underline;
-  font-family: 'Clear Sans', 'Courier New', Courier, monospace;
 }
 
-.construction {
+.under-construction {
   font-size: 30px;
   font-family: 'Space Mono', 'Courier New', Courier, monospace;
+  font-weight: bolder;
   color: black;
   text-shadow: 1px 1px 0 #ffa8ff, -1px -1px 0 #acffff;
   text-align: center;
 }
 
-.construction strong {
-  display: block;
+.under-construction p {
   max-width: 600px;
   margin: auto;
 }
